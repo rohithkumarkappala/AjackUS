@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Employee Directory</h1>
+      <a href="add-edit.html"><button>Add Employee</button></a>
+    </div>
+
+    <div class="search-sort">
+      <input type="text" id="searchInput" placeholder="Search by name or email" />
+      <select id="sortBy">
+        <option value="">Sort By</option>
+        <option value="firstName">First Name</option>
+        <option value="department">Department</option>
+      </select>
+      <button id="toggleFilter">Filter</button>
+    </div>
+
+    <div class="filter-panel" id="filterPanel">
+      <input type="text" id="filterFirstName" placeholder="Filter by First Name" />
+      <input type="text" id="filterDepartment" placeholder="Filter by Department" />
+      <input type="text" id="filterRole" placeholder="Filter by Role" />
+      <button id="applyFilter">Apply Filter</button>
+      <button id="clearFilter">Clear</button>
+    </div>
+
+    <div id="employee-list-container"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

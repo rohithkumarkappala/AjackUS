@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add/Edit Employee</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="formTitle">Add Employee</h1>
+
+    <form id="employeeForm" class="form-container">
+      <input type="hidden" id="employeeId" />
+
+      <div class="form-group">
+        <label for="firstName">First Name*</label>
+        <input type="text" id="firstName" required />
+        <div class="error" id="errorFirstName"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name*</label>
+        <input type="text" id="lastName" required />
+        <div class="error" id="errorLastName"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input type="email" id="email" required />
+        <div class="error" id="errorEmail"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="department">Department*</label>
+        <input type="text" id="department" required />
+        <div class="error" id="errorDepartment"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="role">Role*</label>
+        <input type="text" id="role" required />
+        <div class="error" id="errorRole"></div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" id="saveBtn">Save</button>
+        <a href="dashboard.html"><button type="button" id="cancelBtn">Cancel</button></a>
+      </div>
+    </form>
+  </div>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
