@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
-  if (path.includes("dashboard.html")) {
+  if (path.includes("index.html")) {
     initDashboard();
   } else if (path.includes("add-edit.html")) {
     initForm();
@@ -237,6 +237,6 @@ function initForm() {
 
     saveEmployees();
     localStorage.removeItem("editId");
-    window.location.href = "dashboard.html";
+    window.location.href = "index.html";
   });
 }
